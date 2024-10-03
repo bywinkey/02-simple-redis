@@ -1,0 +1,8 @@
+{
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "rust-lang.rust-analyzer",
+    "rust-analyzer.check.overrideCommand": null,
+    "editor.codeActionsOnSave": {
+
+    }
+}
