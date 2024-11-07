@@ -18,8 +18,7 @@ Bulk errors
 Integers
     - :[<+|->]<value>\r\n
 Bulk strings
-
-
+    - $<length>\r\n<data>\r\n
 Null bulk strings
     - $-1\r\n
 Arrays

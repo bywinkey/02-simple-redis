@@ -472,6 +472,8 @@ fn calc_total_length(
     // 假设一切都是美好的
     let mut total = end + CRLF_LEN; //此处是， array, map, set 类型去掉前缀之后的end + \r\n 的长度。
     let mut data = &buf[total..]; // 获取去掉 前缀开始，到整个buf的全部内容
+    let tmp = String::from_utf8_lossy(data);
+    println!("测试结果={:?}", tmp);
     match prefix {
         // array and set of prefix
         // *<number-of-elements>\r\n<element-1>...<element-n>
